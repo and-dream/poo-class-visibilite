@@ -29,6 +29,13 @@ class Car
      */
     private string $date;
 
+    public function __construct(string $model, string $color, string $date)
+    {
+        $this->model =$model;
+        $this->color = $color;
+        $this->date = $date;   
+    }
+
     /**
      *
      * @return [type]
