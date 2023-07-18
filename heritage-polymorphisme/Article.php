@@ -6,39 +6,39 @@ class Article
      *
      * @var string
      */
-    private string $nom;
+    private string $name;
 
     /**
      *
      * @var int
      */
-    private float $prix;
+    private float $price;
 
-    public function __construct(string $nom, float $prix)
+    public function __construct(string $name, float $price)
     {
-      $this->nom = $nom;
-      $this->prix =$prix;  
+      $this->name = $name;
+      $this->price =$price;  
     }
 
-    public function setNom(string $nom): self
+    public function setName(string $name): self
     {
-        $this->nom = $nom;
+        $this->name = $name;
         return $this;
     }
 
-    public function getNom(string $nom): string
+    public function getName(string $name): string
     {
-        return $this->nom;
+        return $this->name;
     }
 
-    public function setPrix(float $prix): self
+    public function setPrice(float $price): self
     {
-        $this->$prix = $prix;
+        $this->$price = $price;
         return $this;
     }
 
-    public function getPrix(): float
+    public function getPrice(): float
     {
-        return $this->prix;
+        return $this->price;
     }
 }
