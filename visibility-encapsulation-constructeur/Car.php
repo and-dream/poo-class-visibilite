@@ -5,6 +5,10 @@
 //  - private : accessible uniquement depuis l'interieur de la classe
 //  - protected : accessible depuis l'interieur de la classe et depuis les classes enfants
 
+// Encapsulation est le fait de rendre privé les propriétés ou les methodes d'une classe 
+// pour empecher l'exterieur de modifier ou de lire les propriétés d'une classe
+// pour accéder aux propriétés privées d'une classe, on utilise les getters et les setters
+
 //  Un getter (accesseur) est une methode qui permet de récupérer la valeur d'une propriété privée
 //  Un setter (mutateur) est une methode qui permet de modifier la valeur d'une propriété privée
 

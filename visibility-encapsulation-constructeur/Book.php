@@ -45,7 +45,7 @@ class Book
         return $this;
     }
 
-    public function getTitle()
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -56,9 +56,9 @@ class Book
         return $this;
     }
 
-    public function getAuthor()
+    public function getAuthor(): string
     {
-        return $this;
+        return $this->author;;
     }
 
     public function setPages(int $pages): self
@@ -67,20 +67,32 @@ class Book
         return $this;
     }
 
-    public function getPages()
-    {
-        return $this;
+    public function getPages(): int
+    { 
+        return $this->pages;
     }
 
-    public function setYear(int $year): self
-    {
-        $this->year = $year;
-        return $this;
-    }
-
+    /**
+     * Get the value of year
+     *
+     * @return  int
+     */ 
     public function getYear()
     {
-        return $this;
+        return $this->year;
     }
 
+    /**
+     * Set the value of year
+     *
+     * @param  int  $year
+     *
+     * @return  self
+     */ 
+    public function setYear(int $year)
+    {
+        $this->year = $year;
+
+        return $this;
+    }
 }
