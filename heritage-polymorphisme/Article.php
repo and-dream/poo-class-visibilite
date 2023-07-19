@@ -6,13 +6,13 @@ class Article
      *
      * @var string
      */
-    private string $name;
+    protected string $name;
 
     /**
      *
      * @var int
      */
-    private float $price;
+    protected float $price;
 
     public function __construct(string $name, float $price)
     {
@@ -26,7 +26,7 @@ class Article
         return $this;
     }
 
-    public function getName(string $name): string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -40,5 +40,10 @@ class Article
     public function getPrice(): float
     {
         return $this->price;
+    }
+
+    public function displayProduct()
+    {
+        return "le produit est un : $this->name et il coûte $this->price euros";
     }
 }
