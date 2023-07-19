@@ -37,5 +37,5 @@ require_once './Warrior.php';
 
 $guerrier = new Warrior('Ken', 5);
 echo $guerrier->getName();
-echo $guerrier->getScore();
 echo $guerrier->getArrow();
+echo $guerrier->getScore();

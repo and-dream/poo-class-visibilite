@@ -29,6 +29,7 @@ abstract class Player {
         $this->name = $name;
     }
 
+    public abstract function hit();
 
     /**
      *
@@ -51,11 +52,7 @@ abstract class Player {
         return $this;
     }
 
-    public function hit()
-    {
-        $this->life = $this->life - 10;
-    }
-
+    
     /**
      * Get the value of life
      *
