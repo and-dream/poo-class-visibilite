@@ -12,6 +12,10 @@ class Mage extends Player {
         $this->mana = $mana;
     }
 
+    public function hit()
+{
+    $this->life = $this->life - 15;
+}
 
     /**
      *
@@ -34,8 +38,4 @@ class Mage extends Player {
 
         return $this;
     }
-    
-    
-    
-
 }
