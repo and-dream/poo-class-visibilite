@@ -4,6 +4,7 @@ require_once './Animal.php';
 require_once './Dog.php';
 require_once './Bird.php';
 
+
 $snoopy = new Dog ('snoopy', 5, 4, ['croquettes', "filet boeuf"], 'chien de berger');
 echo $snoopy->description();
 
@@ -16,4 +17,8 @@ echo '<br>';
 echo $cigogne->description();
 echo '<br>';
 echo $pie->description();
+
+echo '<br>';
+echo $snoopy->devore();
+
 

@@ -1,7 +1,8 @@
 <?php
 
+require_once './SavageAnimal.php';
 
-class Dog extends Animal
+class Dog extends Animal implements SavageAnimal
 {
 
     /**
@@ -56,4 +57,16 @@ class Dog extends Animal
 
         return $this;
     }
+
+    public function devore()
+    {
+        return "je viens de dévorer un animal";
+    }
+
+    public function eatSomeOne(Bird $bird)
+    {
+        return "je viens de dévorer une " ;
+    }
+
+
 }
