@@ -1,6 +1,7 @@
 <?php
 
-class Bird extends Animal
+namespace App\interface;
+class Bird extends Animal 
 {
 
     /**

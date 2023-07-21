@@ -2,6 +2,8 @@
 
 require_once './SavageAnimal.php';
 
+namespace \App\interface;
+
 class Dog extends Animal implements SavageAnimal
 {
 
@@ -63,10 +65,11 @@ class Dog extends Animal implements SavageAnimal
         return "je viens de dévorer un animal";
     }
 
-    public function eatSomeOne(Bird $bird)
+    public function eatSomeOne(Bird $x)
     {
-        return "je viens de dévorer une " ;
+        return 'Je viens de dévorer une : ' .$x->getName();
+        
     }
 
 
-}
+} 

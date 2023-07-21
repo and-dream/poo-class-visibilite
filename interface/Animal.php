@@ -1,6 +1,9 @@
 <?php
 
-abstract class Animal
+
+namespace App\interface;
+
+ class Animal
 {
     /**
      *
@@ -27,7 +30,7 @@ abstract class Animal
      */
     protected array $listAliment;
 
-    protected abstract function getEat();
+    // protected  function getEat();
 
     public function __construct(string $name, int $age, int $nbPatte, array $listAliment)
     {
