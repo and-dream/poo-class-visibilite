@@ -2,7 +2,7 @@
 
 namespace App\namespace;
 
-class Peugeot extends Vehicule
+class Peugeot extends Vehicule implements Engine
 {
 /**
  *

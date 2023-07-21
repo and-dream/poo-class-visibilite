@@ -2,7 +2,9 @@
 
 namespace App\namespace;
 
- abstract class Vehicule
+use Random\Engine;
+
+ abstract class Vehicule implements Engine
  {
     /**
      *
